@@ -1,9 +1,9 @@
 body {
   font-size: 16px;
-  font-family: sans-serif;
+  font-family: Roboto,sans-serif;
 }
 
-div.bar {
+header.bar {
   background-color: #0094B8;
   display: flex;
   justify-content: flex-end;
@@ -21,9 +21,13 @@ div.statusbar div.icon {
   padding-right: 8px;
 }
 
-div.search {
+nav.search {
   background-color: #00B9E6;
   height: 100px;
+}
+
+article.results {
+  overflow-y: scroll;
 }
 
 div.route h2 {
@@ -39,7 +43,7 @@ div.route p {
   font-weight: 200;
 }
 
-div.option {
+.option {
   display: flex;
   padding: 1rem 0;
   margin: 0 1rem;
@@ -77,12 +81,12 @@ i.fa-bus {
   margin-right: .6rem;
 }
 
-div.bottom i.fa, div.search i.fa {
+footer.bottom i.fa, nav.search i.fa {
   color: #ffffff;
   font-size: 1.8rem;
 }
 
-div.bottom {
+footer.bottom {
   background-color: #000000;
   height: 60px;
   position:fixed;
@@ -91,21 +95,21 @@ div.bottom {
   display:flex;
 }
 
-div.bottom div.icon {
+footer.bottom div.icon {
   flex-grow: 1;
 }
 
-div.search {
+nav.search {
   color: #FFFFFF;
   display: flex;
   padding: 0 1rem;
 }
 
-div.search div.icon {
+nav.search div.icon {
   flex-grow: 1;
 }
 
-div.search div.main {
+nav.search div.main {
   flex-grow: 8;
   font-size: 1.8rem;
   font-weight: 300;
